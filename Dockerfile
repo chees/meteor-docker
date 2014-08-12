@@ -18,7 +18,7 @@ RUN mkdir /home/meteor && \
 
 USER meteor
 
-ADD bundle /home/meteor/app
+ADD .bundle /home/meteor/app
 WORKDIR /home/meteor/app
 
 CMD [ "node", "main.js" ]
